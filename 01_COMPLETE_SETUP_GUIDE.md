@@ -35,7 +35,7 @@
 
 A Comprehensive Hardware-Accelerated Edge AI System for Real-Time Alzheimer's Classification
 
-This guide walks you through every step of setting up the PYNQ-ZU board with the Vitis AI Deep Learning Processor (DPU) for live Alzheimer's classification via webcam.
+This guide walks you through every step of setting up the PYNQ-ZU board with the Vitis AI Deep Learning Processor (DPU) for live Alzheimer's classification via webcam
 
 ---
 
