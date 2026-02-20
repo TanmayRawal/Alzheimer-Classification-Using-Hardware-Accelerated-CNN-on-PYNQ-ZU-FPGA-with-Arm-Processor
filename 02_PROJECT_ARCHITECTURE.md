@@ -174,9 +174,9 @@ Output from FPGA: [0.02, 0.05, 0.78, 0.15]
 
 | Component | CPU (ARM only) | FPGA | Speedup |
 |-----------|----------------|------|---------|
-| Time per image | 325 ms | 42 ms | **7.7x faster** |
-| Throughput | 3 images/sec | 23 images/sec | **7.7x more** |
-| Latency | 325 ms | 42 ms | Better for live video |
+| Time per image | 290 ms | 42 ms | **7.66x faster** |
+| Throughput | 3 images/sec | 23 images/sec | **7.627x more** |
+| Latency | 290 ms | 48 ms | Better for live video |
 
 ### Energy Efficiency
 
