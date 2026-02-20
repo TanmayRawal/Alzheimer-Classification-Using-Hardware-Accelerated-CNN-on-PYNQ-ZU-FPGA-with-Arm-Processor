@@ -167,9 +167,6 @@ Output from FPGA: [0.02, 0.05, 0.78, 0.15]
 ```
 
 ## ⚡ Why FPGA Acceleration?
-
-![Performance Comparison: CPU vs FPGA](images/PYNQ-ZU.png)
-
 ### Speed Comparison
 
 | Component | CPU (ARM only) | FPGA | Speedup |
