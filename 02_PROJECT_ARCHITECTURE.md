@@ -68,7 +68,7 @@ So we built a solution that runs **right on edge hardware** (FPGA) in the hospit
 
 We start with a brain MRI scan (usually 512×512 pixels or larger).
 
-![Input MRI Image](images/input_image.png)
+![Input MRI Image](images/INPUT.jpeg)
 
 ```
 Input: Raw MRI scan
@@ -79,7 +79,7 @@ Input: Raw MRI scan
 
 The ARM processor does quick preparation:
 
-![Preprocessing Pipeline](images/preprocessing.png)
+![Preprocessing Pipeline](images/PREPROCESS%20.jpeg)
 
 ```python
 # Step 1: Convert to grayscale (already is, but ensure it)
@@ -114,7 +114,7 @@ This is where the magic happens on the **FPGA**.
 
 **ResNet-50 v2 Architecture Overview:**
 
-![ResNet-50 v2 Architecture](images/resnet50_v2_architecture.png)
+![ResNet-50 v2 Architecture](images/ResNet50v2-based-architecture-for-proposed-system.png)
 
 ```
 Input (224×224×1 grayscale image)
@@ -154,7 +154,7 @@ Output: [0.02, 0.05, 0.78, 0.15]
 
 The FPGA returns probabilities for each class:
 
-![Output Classification](images/output_result.png)
+![Output Classification](images/OUTPUT%20.jpeg)
 
 ```
 Output from FPGA: [0.02, 0.05, 0.78, 0.15]
