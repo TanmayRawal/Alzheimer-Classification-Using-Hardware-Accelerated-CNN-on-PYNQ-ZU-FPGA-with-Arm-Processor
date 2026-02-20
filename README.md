@@ -1,4 +1,4 @@
-# 🧠 Alzheimer's Disease Classification on PYNQ-ZU
+# 🧠 Alzheimer's Disease Classification on PYNQ-ZU!
 
 ## ⚡ Hardware-Accelerated Brain MRI Analysis System
 
