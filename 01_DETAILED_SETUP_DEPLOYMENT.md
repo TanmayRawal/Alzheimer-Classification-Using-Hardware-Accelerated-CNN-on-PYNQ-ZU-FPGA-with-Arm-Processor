@@ -83,7 +83,7 @@ The Zynq UltraScale+ uses a **heterogeneous architecture** where functionality i
 
 The PS and PL are tightly coupled:
 
-![PS/PL Architecture & Memory Connections](images/ps_pl_architecture.png)
+![PS/PL Architecture & Memory Connections](images/PYNQ_ZU%20Block%20Diagram.png)
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -156,7 +156,7 @@ The PS and PL are tightly coupled:
 
 ## Phase 1: Firmware Initialization & OS Boot
 
-![PYNQ-ZU Board Overview](images/pynq_zu_board_overview.png)
+![PYNQ-ZU Board Overview](images/PYNQ-ZU.png)
 
 The PYNQ board goes through a sophisticated multi-stage boot process.
 
@@ -196,7 +196,7 @@ When you power on the board:
 
 ### Step 2: First Power-On
 
-![PYNQ-ZU Board LED Indicators](images/pynq_zu_leds.png)
+![PYNQ-ZU Board Components and LEDs](images/PYNQ_ZUcomponents.png)
 
 1. Ensure microSD card is fully inserted (click until it stops)
 2. Connect 12V power supply
@@ -228,7 +228,7 @@ If ping fails, check your router's DHCP client list for "pynq" device.
 
 Once the board is booted and connected, you'll interact with it via Jupyter Lab (a web-based Python IDE).
 
-![Jupyter Lab Interface](images/jupyter_lab_interface.png)
+![PYNQ-ZU Top View and Board Layout](images/top%20view%20of%20PYNQ_ZU.png)
 
 ### Connecting to Jupyter
 
@@ -359,7 +359,7 @@ ls -lh /home/xilinx/dpu.*
 
 ### Test DPU Initialization
 
-![DPU Block Diagram](images/dpu_architecture.png)
+![Vitis AI and DPU Architecture](images/Vitis%20AI%20Docker.png)
 
 Create `test_dpu.py`:
 
@@ -417,7 +417,7 @@ else:
 
 Create `webcam_inference.py`:
 
-![Real-time Inference Flow Diagram](images/inference_pipeline.png)
+![Real-time Inference Pipeline](images/PYNQ_ZU%20Board%20setup.png)
 
 ```python
 #!/usr/bin/env python3

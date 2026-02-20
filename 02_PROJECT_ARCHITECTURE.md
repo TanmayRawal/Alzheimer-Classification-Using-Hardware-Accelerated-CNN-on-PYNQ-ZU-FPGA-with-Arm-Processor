@@ -43,7 +43,7 @@ So we built a solution that runs **right on edge hardware** (FPGA) in the hospit
             └─────────────────────────┘
 ```
 
-![Hardware Architecture Diagram](images/hardware_architecture.png)
+![Hardware Architecture Diagram](images/PYNQ_ZU%20Block%20Diagram.png)
 
 ## How It Works - Step by Step
 
@@ -141,7 +141,7 @@ Output from FPGA: [0.02, 0.05, 0.78, 0.15]
 
 ## Why FPGA Acceleration?
 
-![Performance Comparison: CPU vs FPGA](images/performance_comparison.png)
+![Performance Comparison: CPU vs FPGA](images/PYNQ-ZU.png)
 
 ### Speed Comparison
 
@@ -164,7 +164,7 @@ In a hospital scanning 100 patients/day, this saves ~6.5 kWh daily = real cost s
 
 Here's what happened before deployment:
 
-![Training Pipeline](images/training_pipeline.png)
+![Transfer Learning Pipeline](images/transfer%20learning.png)
 
 ```
 Step 1: Get Dataset

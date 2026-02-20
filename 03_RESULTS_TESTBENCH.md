@@ -1,6 +1,6 @@
 # Test Bench & Results
 
-![Model Performance Metrics](images/model_performance_metrics.png)
+![Vitis AI Performance Analysis](images/Vitis%20AI%20Docker.png)
 
 ## Model Performance Overview
 
@@ -36,7 +36,7 @@ Here's the breakdown by dementia stage:
 
 This shows where the model gets confused:
 
-![Confusion Matrix Heatmap](images/confusion_matrix.png)
+![PYNQ-ZU Block Diagram Analysis](images/PYNQ_ZU%20Block%20Diagram.png)
 
 ```
                 Predicted →
@@ -88,7 +88,7 @@ Moderate       6      2       1       231
 
 We tested the model 5 times with different data splits:
 
-![Cross-Validation Results](images/cross_validation.png)
+![Performance Validation Results](images/PYNQ-ZU.png)
 
 ```
 Fold 1: 93.5%
@@ -108,7 +108,7 @@ Mean:   93.3% ± 0.5%
 
 ### Accuracy Over Time
 
-![Training History - Accuracy Curves](images/training_accuracy.png)
+![Training History Visualization](images/transfer%20learning.png)
 
 ```
 Epoch | Phase | Train Acc | Test Acc | Notes
