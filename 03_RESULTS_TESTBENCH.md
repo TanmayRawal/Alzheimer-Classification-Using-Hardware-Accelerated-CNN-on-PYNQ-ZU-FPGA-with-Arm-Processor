@@ -229,7 +229,7 @@ The 7% of images we get wrong - why?
 
 ## Dataset Info
 
-![Alzheimers Detection Dataset](images/Alzheimers_Detection_dataset.png)
+![Alzheimers Detection Dataset](../image.png)
 
 **Alzheimer MRI 4 Classes Dataset:**
 - **Total images**: 8,960 images split across:
