@@ -180,7 +180,7 @@ alzheimer_pynq_zu/
 
 ---
 
-## 💡 System Architecture at a Glance
+## 💡 System Architecture at a Glance.
 
 <div align="center">
 
