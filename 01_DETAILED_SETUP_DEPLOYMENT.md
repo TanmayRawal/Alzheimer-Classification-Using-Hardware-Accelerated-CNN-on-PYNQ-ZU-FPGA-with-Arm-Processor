@@ -1,10 +1,27 @@
-# PYNQ-ZU Complete Setup & Deployment Guide
+# 🧠 PYNQ-ZU Complete Setup & Deployment Guide
 
-**A Comprehensive Hardware-Accelerated Edge AI System for Real-Time Alzheimer's Classification**
+## ⚡ Hardware-Accelerated Brain MRI Analysis System
 
-This guide walks you through every step of setting up the PYNQ-ZU board with the Vitis AI Deep Learning Processor (DPU) for live Alzheimer's classification via webcam.
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge) 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge) 
+![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange?style=for-the-badge) 
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Accuracy](https://img.shields.io/badge/Accuracy-94%25-brightgreen?style=for-the-badge)
+![Speedup](https://img.shields.io/badge/Speedup-7.7x-red?style=for-the-badge)
+
+**[📖 Documentation](../README.md#-complete-documentation) • [🏗️ Architecture](02_PROJECT_ARCHITECTURE.md) • [🧪 Results](03_RESULTS_TESTBENCH.md) • [⚙️ Implementation](04_IMPLEMENTATION_GUIDE.md)**
+
+</div>
 
 ---
+
+## 📋 Overview
+
+A Comprehensive Hardware-Accelerated Edge AI System for Real-Time Alzheimer's Classification
+
+This guide walks you through every step of setting up the PYNQ-ZU board with the Vitis AI Deep Learning Processor (DPU) for live Alzheimer's classification via webcam.
 
 ## System Architecture Overview
 
