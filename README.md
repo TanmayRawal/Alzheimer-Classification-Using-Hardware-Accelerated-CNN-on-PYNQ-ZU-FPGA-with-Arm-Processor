@@ -1,52 +1,78 @@
 # Alzheimer's Disease Classification on PYNQ ZU
 ## Hardware-Accelerated Brain MRI Analysis System
 
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![FPGA](https://img.shields.io/badge/FPGA-Xilinx%20PYNQ--ZU-orange) ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
 ## 🎯 Quick Summary
 
-This project demonstrates **hardware-accelerated edge AI inference** for medical image classification. It classifies brain MRI images into 4 Alzheimer's disease stages using a **MobileNetV2 CNN** deployed on a **Xilinx PYNQ ZU board** with **FPGA acceleration**.
+This project demonstrates **hardware-accelerated edge AI inference** for medical image classification. It classifies brain MRI images into 4 Alzheimer's disease stages using a **MobileNetV2 CNN** deployed on a **Xilinx PYNQ ZU FPGA board** with **Vitis AI Deep Learning Processor (DPU)** acceleration.
 
-### Key Results
-- **📊 Accuracy**: 95.2% (4-class classification)
-- **⚡ Speed**: 250ms (CPU) → 80ms (FPGA) = **3.1× faster**
-- **💾 Size**: 8.4 MB → 2.1 MB (quantized, 75% compression)
-- **🔧 Resource**: 45% LUTs, 60% BRAM (FPGA efficient)
-- **📈 Robustness**: >90% accuracy across all classes
+### Key Performance Metrics
+- **📊 Accuracy**: 93% on test set (960 images)
+- **⚡ Speed**: 325ms (CPU) → 42ms (FPGA) = **7.7× faster**
+- **📺 Real-time**: 23 FPS on live webcam (vs 3 FPS on CPU)
+- **💾 Model Size**: 13.8 MB → 3.5 MB (75% compression via INT8 quantization)
+- **🔋 Power**: 2.5W (FPGA) vs 3.7W (CPU) - More efficient
+- **🎯 Resource**: ~45% LUTs, ~60% DSP (XCZU5EG efficient)
 
 ---
 
-## 📁 Project Structure
+## � Documentation
+
+**Start here depending on what you need:**
+
+| Document | Purpose |
+|----------|---------|
+| **[01_DETAILED_SETUP_DEPLOYMENT.md](01_DETAILED_SETUP_DEPLOYMENT.md)** | 🔧 Complete hardware setup and live inference deployment (6 phases) |
+| **[02_PROJECT_ARCHITECTURE.md](02_PROJECT_ARCHITECTURE.md)** | 🏗️ How the system works: Problem, solution, MobileNetV2, hardware/software partitioning |
+| **[03_RESULTS_TESTBENCH.md](03_RESULTS_TESTBENCH.md)** | 📊 Model performance, accuracy metrics, confusion matrix, robustness testing |
+| **[04_IMPLEMENTATION_GUIDE.md](04_IMPLEMENTATION_GUIDE.md)** | 📋 Week-by-week implementation roadmap from scratch |
+
+---
+
+## 🚀 Quick Start (5 Minutes)
+
+Want to get it running quickly?
+
+```bash
+# 1. Flash PYNQ image to microSD card
+# 2. Boot board and access Jupyter at http://pynq:9090
+# 3. Transfer model files to /home/xilinx/
+# 4. Run inference:
+
+python3 webcam_inference.py
+```
+
+That's it! Real-time classification in <50ms.
+
+**Full setup instructions:** See [01_DETAILED_SETUP_DEPLOYMENT.md](01_DETAILED_SETUP_DEPLOYMENT.md)
+
+---
+
+## 📁 Project Files
 
 ```
 alzheimer_pynq_zu/
-├── README.md (this file)
-├── README_SETUP_PYNQ_ZU.md          ← Setup & deployment guide
-├── README_MODEL_ARCHITECTURE_PERFORMANCE.md  ← Model details & benchmarks
+├── README.md (this file)                     ← Start here for overview
+├── 01_DETAILED_SETUP_DEPLOYMENT.md           ← Hardware setup guide
+├── 02_PROJECT_ARCHITECTURE.md                ← System architecture & explanation
+├── 03_RESULTS_TESTBENCH.md                   ← Performance benchmarks
+├── 04_IMPLEMENTATION_GUIDE.md                ← Week-by-week roadmap
 │
-├── alzheimer_mobilenetv2_final.keras        ← Trained model (FP32)
-├── Alzheimer_MRI_4_classes_dataset.zip      ← Training dataset (6.4K images)
-├── alzheimer_mri_mobilenet_vitis.ipynb      ← Training notebook
+├── alzheimer_mobilenetv2_final.keras         ← Pre-trained model (13.8 MB FP32)
+├── Alzheimer_MRI_4_classes_dataset.zip       ← Training dataset (6,400 images)
+├── alzheimer_mri_mobilenet_vitis.ipynb       ← Training notebook (full code)
 │
-├── scripts/
-│   ├── inference.py                 ← Single image inference
-│   ├── batch_inference.py          ← Process multiple images
-│   ├── camera_inference.py         ← Real-time camera input
-│   └── benchmark.py                ← Performance benchmarking
-│
-├── models/
-│   ├── alzheimer_mobilenetv2.xmodel ← Compiled FPGA model
-│   ├── quantized_model/            ← INT8 quantized model
-│   └── saved_model_keras_vitis/    ← SavedModel format
-│
-├── data/
-│   ├── train/                      ← Training images
-│   ├── val/                        ← Validation images
-│   └── test/                       ← Test images
-│
-└── requirements.txt                ← Python dependencies
+└── MINI_PROJECT_REPORT_TANMAY_RAWAL_.pdf     ← Academic project report
+```
+
+**Model files (generated during deployment):**
+- `dpu.bit` - FPGA bitstream
+- `dpu.hwh` - Hardware metadata
+- `dpu.xmodel` - Compiled quantized model
+- `webcam_inference.py` - Live inference script
 ```
 
 ---
