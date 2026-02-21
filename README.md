@@ -263,7 +263,7 @@ alzheimer_pynq_zu/
 <summary><b>📋 Team & Acknowledgments</b></summary>
 
 ### Primary Developer
-- **Oyash** - Main implementation & deployment
+- **TanmayRawal** - Main implementation & deployment
 
 ### Architecture & Design
 - Vitis AI DPU integration
