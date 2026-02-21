@@ -355,7 +355,7 @@ Found this useful? **Star this repo!** ⭐ It helps others discover the project.
 
 ## 📞 Contact & Links
 
-- 🐙 GitHub: [YAshhh29/Alzheimer-Classification](https://github.com/YAshhh29/Alzheimer-Classification-Using-Hardware-Accelerated-CNN-on-PYNQ-ZU-FPGA-with-Arm-Processor)
+- 🐙 GitHub: https://github.com/TanmayRawal/Alzheimer-Classification-Using-Hardware-Accelerated-CNN-on-PYNQ-ZU-FPGA-with-Arm-Processor
 
 
 ---
