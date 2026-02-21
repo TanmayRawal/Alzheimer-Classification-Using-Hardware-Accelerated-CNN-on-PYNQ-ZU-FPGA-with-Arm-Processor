@@ -247,7 +247,7 @@ alzheimer_pynq_zu/
 | **Framework** | TensorFlow/Keras |
 | **Edge Acceleration** | Xilinx Vitis AI |
 | **Board** | PYNQ-ZU (Zynq UltraScale+) |
-| **CNN Model** | MobileNetV2 (Transfer Learning) |
+| **CNN Model** | ResNet50 (Transfer Learning) |
 | **Quantization** | INT8 (Post-Training) |
 | **Language** | Python 3.8+ |
 | **Image Processing** | OpenCV |
